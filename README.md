@@ -2,7 +2,7 @@
 
 # copie des fichiers cachés et non-cachés présents à la racine du modèle
 # note : des alertes sont affichées à propos de dossiers ignorés, c'est normal
-cp -n ../model-react/{.*,*} .
+cp -n ../model-react/{.\*,*} .
 # copie (récursive) des dossiers src/, config/ et public/
 # note : des alertes sont affichées à propos de dossiers ignorés, c'est normal
 cp -rn ../model-react/{src,config,public} .
