@@ -1,3 +1,20 @@
+
+
+# copie des fichiers cachés et non-cachés présents à la racine du modèle
+# note : des alertes sont affichées à propos de dossiers ignorés, c'est normal
+cp -n ../model-react/{.*,*} .
+# copie (récursive) des dossiers src/, config/ et public/
+# note : des alertes sont affichées à propos de dossiers ignorés, c'est normal
+cp -rn ../model-react/{src,config,public} .
+
+# installation des dépendances listées dans le package.json
+npm i
+
+# lancement du serveur de dev
+npm start
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
